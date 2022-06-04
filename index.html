@@ -10,7 +10,7 @@
 
 	*{padding: 0px; margin: 0px;}
 	header, nav, section, aside, footer { 
-		border: solid 0px rgb(28, 27, 27); 
+		border: solid 1px rgb(28, 27, 27); 
 	}
 header { margin-top: 70px;
 	width: 995px; height: 150px;
@@ -19,7 +19,7 @@ header { margin-top: 70px;
 
 section {
 	width: 674px; height: 300px;
-	margin-left: 150px; float: left;
+	margin-left: 130px; float: left;
 	font-size: 80px; 
 	font-family: '나눔고딕 extrabold';
 }
@@ -30,10 +30,10 @@ aside {
 }
 
 footer {
-	width: 995px; height: 130px;
+	width: 995px; height: 200px;
 	margin-top: 10px;
 	margin: 0 auto;
-	margin-bottom: 20px
+	margin-bottom: 100px
 }
 .clear {clear: both;}
 
@@ -56,6 +56,8 @@ margin-top: 30px;  text-align: center; display: flex;
 	font-weight: bold;
 	font-family: '나눔고딕 extrabold';
 	box-shadow: 3px 3px 3px 3px;
+	text-decoration: none;
+	color: black;
     }
 #button {
 	border: solid  1px rgb(212, 215, 215);
@@ -71,6 +73,8 @@ margin-top: 30px;  text-align: center; display: flex;
 	font-weight: bold;
 	font-family: '나눔고딕 extrabold';
 	box-shadow: 3px 3px 3px 3px;
+	text-decoration: none;
+	color: black;
     }
 #button2 {
 	border: solid  1px rgb(212, 215, 215);
@@ -78,7 +82,7 @@ margin-top: 30px;  text-align: center; display: flex;
 	width: 150px;
 	height: 40px;
 	padding-top: 3px;
-	margin-top: 20px;
+
 	font-size: 30px;
 	text-align: center;
 	background-color: rgb(240, 237, 237);
@@ -92,6 +96,11 @@ font-family: '나눔고딕 extrabold';}
 h4 {float: left;}
 A:hover {text-decoration: none; color: green;}
 
+a:link{ color: black; text-decoration: none;}
+a:visited{ color: black; text-decoration: none; }
+a:hover{ color: black; text-decoration: none; }
+
+
 </style>
 </head>
 <body>
@@ -101,7 +110,7 @@ A:hover {text-decoration: none; color: green;}
  <img src="logo.png" width="400px"> 
 </header>
 <div class="back"> 
-	<a href="https://www.coupang.com/">   <h4><img src="cupang.jpg"></h4>  </a>
+	<a href="https://www.coupang.com/" target="_blank">   <h4><img src="cupang.jpg" width="150px"></h4>  </a>
 <section>
 	궁합이 잘 맞는 <br>
 	MBTI와 <br>
@@ -111,20 +120,20 @@ A:hover {text-decoration: none; color: green;}
 
 <aside>
 	<div id='button1'>
-	<A href="https://www.16personalities.com/ko/%EB%AC%B4%EB%A3%8C-%EC%84%B1%EA%B2%A9-%EC%9C%A0%ED%98%95-%EA%B2%80%EC%82%AC">
+	<A href="https://www.16personalities.com/ko/%EB%AC%B4%EB%A3%8C-%EC%84%B1%EA%B2%A9-%EC%9C%A0%ED%98%95-%EA%B2%80%EC%82%AC" target="_blank">
 		MBTI 검사하러가기
 	</A>	
 	</div> 
 
 	<div id='button'>
-		로그인 
+	<a href="소셜 계정으로 로그인.html"> 로그인 </a>
 	</div> 
 </aside>
 
 <div class='clear'></div>
 <footer>
 	<div id="button2">
-	공지사항 & 안내
+	공지사항
 	</div> <br> <br>
 	<h7>-2022.04.24 [안내] 결제 이벤트 시행 안내 <br> <br> <br>
 
