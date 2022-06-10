@@ -3,6 +3,8 @@
     <head><meta charset="utf-8">
     <style>
         * {padding: 0px; margin:0px;}
+        header, section {border: solid 0px black;}
+        section {margin: 0 auto; height: 190px; height: 400px;}
         header {height: 100px; width: 1000px; margin: 0 auto; margin-bottom: 50px; margin-top: 100px;}
         #ww {height: 100px; width: 1000px; margin: 0 auto;}
         #ee {height: 100px; width: 1000px; margin: 0 auto;}
@@ -12,36 +14,38 @@
         #button {
                 border: solid  1px black;
                 border-radius: 20px;
-                width: 300px;
-                height: 70px;
+                width: 500px;
+                height: 120px;
                 padding: 6px;
                 text-align: center;
                 background-color: white;
                 color: black;
-                margin: 0 0 0 0;
                 padding-top: 30px;
                 box-shadow: 0px 3px 3px;
                 font-size: larger;
                 font-family: '나눔고딕 extrabold';
                 font-weight: bold;
+                margin-bottom: 30px;
+                margin: 0 auto;
+            
             }
-            a {color: white;}
+         
 
             #button2 {
                 border: solid  1px black;
                 border-radius: 20px;
-                width: 300px;
+                width: 150px;
                 height: 55px;
-                padding: 6px;
+                margin-left: 20px;
                 text-align: center;
+                align-items: center; display: flex;   
+                justify-content : center;
                 background-color: white;
                 color: black;
-                margin: 0 0 0 0;
-                padding-top: 30px;
                 box-shadow: 0px 3px 3px;
                 font-size: larger;
                 font-family: '나눔고딕 extrabold';
-                font-weight: bold;
+                float: left;
             }
             a {color: black; text-decoration: none;}
 
@@ -49,15 +53,20 @@
         #qq img {background-image: url("img/로고.png"); background-repeat: no-repeat; background-position: top center; margin: 0 0 0 355px;}
 
         /* 로그인 완료 */
-        #ww #z {margin: 0 0 0 325px; font-family: '나눔고딕 extrabold'; padding-top: 4px;}
+        #ww  { font-family: '나눔고딕 extrabold'; padding-top: 4px; text-align: center;
+        height: 200px;}
 
         /* 엠비티아이 선택 */
-        #ee #x {margin: 30px 0px 0px 325px; padding-top: 4px; font-family: '나눔고딕 extrabold';}
+        #ee #x {margin: 30px 60px 0px 325px; padding-top: 4px; font-family: '나눔고딕 extrabold';}
         .p {color: red;}
       
+        .menu:link{ background-color: none; background-color: white;  text-decoration: none;  width: 200px; padding: 36.5px 0; text-align: center; }
+.menu:visited{background-color: none; background-color: beige; color: black; text-decoration: none; }
+.menu:hover{ background-color: none; background-color: beige; color: black; text-decoration: none; }
 
-        /* mbti 선택 */
-        footer #tt {margin: 0 0 0 325px}
+a:link{ color: black; text-decoration: none; }
+a:visited{ color: black; text-decoration: none; }
+a:hover{ color: black; text-decoration: none; background-color: beige;}
     </style>
     </head>
     <body>
@@ -71,8 +80,10 @@
         <section id='ww'>
             <div id="z">
                 <div id='button'>
-                    로그인이 완료되었습니다.<br>
-                    감사합니다.
+                 친구신청 하기<BR> <BR>
+
+                 ESFJ님에게 친구신청을 합니다. <BR>
+                상대방이 수락하면 친구목록에 추가되어집니다.
                  </div> 
             </div>
         </section>
@@ -81,19 +92,17 @@
             <div id="x">
                 
                 <div id='button2'>
-                <a href="mbti_list.html">
-                 내 <span class="p">MBTI 선택</span>하러 가기
-                </a>
-                 </div> 
+                    <a href="친구신청 취소.html">취소하기</a>
+                 </div>
+                   
+                <div id='button2'>
+                    <a href="친구신청 완료.html">친구신청 하기</a>
+                 </div>  
                
             </div>
         </section>
 
-        <footer>
-            <div id="tt">
-                
-            </div>
-        </footer>
+      
 
     </body>
 </html>

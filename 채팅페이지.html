@@ -1,73 +1,118 @@
+
+   
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset='utf-8'>
+
 <style>
-	*{padding: 0px; margin: 0px;}
-	header, nav, section, aside, footer { 
-		border: solid 1px rgb(28, 27, 27); font-family: '나눔고딕 extrabold';
-	}
+*{padding: 0; margin: 0;}
+body {	font-family: '나눔고딕 extrabold';}
+
+.clear{clear: both;}
+header{width: 100px; height: 10px;margin-top: 30px;border: double 0px white;}
 
 
-section {
-	width: 600px; height: 180px;
-	margin: 0 auto;
-	font-size: 80px; 
-    margin-top: 100px;
-	
-}
 
 nav{
    width: 200px;
-  height: 10px;
-  margin-top: 21px; margin-left: 150px; margin-right: 30px;
-  border: double 0px; float: left;}
+  height: 705px;
+  margin-top: 70px; margin-left: 27px; margin-right: 30px;
+ float: left;}
+
+
+section {
+	width: 900px; height: 700px;
+	margin: 0 auto;
+	font-size: 80px; 
+    margin-top: 100px;
+    margin-bottom: 40px;
+    background-color: rgba(213, 211, 211, 0.987);
+    float: left;
+	
+}
+
+.clear {clear: both;}
+
+
+/* 그 위에 박스들 */
+
+.menu{ background-color:  rgb(214, 213, 213); color: black; border-radius: 30px;
+   margin-bottom: 30px; margin-top: 50px; box-shadow: 3px 3px 3px gainsboro;
+ width: 200px; padding: 35.2px 0; text-align: center;  text-decoration: none;
+MARGIN-top: 50px; }
+
+
+ .menu1 {float: left; margin-left: 5px;}
+
+ /* 친구 신청하기/신고하기 */
+.menu2 {font-size: 20px; float: left; margin-left: 10px; margin-top: 20px;
+border: solid 3px; border-radius: 10px;
+box-shadow: 3px 3px 3px gray; width: 200px; height: 60px; text-align: center;
+align-items: center; display: flex;   justify-content : center;}
+
+
+/*ESFJ와 채팅중입니다 */
+.menu4 {font-size: 30px; float: left; margin-left: 5px; margin-top: 20px;
+    width: 400px;
+ border: solid 0px; text-align: center;
+align-items: center; display: flex;   justify-content : center; }
 
 
 .menu:link{ background-color: none; background-color: white;  text-decoration: none;  width: 200px; padding: 36.5px 0; text-align: center; }
 .menu:visited{background-color: none; background-color: beige; color: black; text-decoration: none; }
 .menu:hover{ background-color: none; background-color: beige; color: black; text-decoration: none; }
 
-a:link{ color: black; text-decoration: none;}
+a:link{ color: black; text-decoration: none; }
 a:visited{ color: black; text-decoration: none; }
-a:hover{ color: black; text-decoration: none; }
+a:hover{ color: black; text-decoration: none; background-color: beige;}
 
 
+/*입력창 */
+#rr {margin: 0% auto; margin-top: 600px; margin-left: 150px;}
+textarea {
+        width: 70%;
+        height: 50px;
+      }
 
-.clear {clear: both;}
-
-.menu{ background-color:  rgb(214, 213, 213); color: black; border-radius: 30px;
-   margin-bottom: 30px; margin-top: 50px; box-shadow: 3px 3px 3px gainsboro;
- width: 200px; padding: 35.2px 0; text-align: center;  text-decoration: none; }
 </style>
 </head>
+
 <body>
+<header>
 	
+</header>
 
-    <div id="1"> 
-        <nav>
-            <div class="menu"><a href="">메인 돌아가기</a></div>
-            <div class="menu"><a href="">새로운 매칭</a></div>
-            <div class="menu"><a href="">광고보고<br> 무료채팅 1/3</a></div>
-            <div class="menu"><a href="">접속해 있는 친구 <br><br>
-                김민주 <br><br>
-                신민규 <br><br>
-                서민석 <br>
-            </a></div>
-  
-        </nav>
+<div id="S2"> 
+    <nav>
+        <div class="menu"><a href="메인페이지.html">메인 돌아가기</a></div>
+        <div class="menu"><a href="새로운 매칭.html">새로운 매칭</a></div>
+        <div class="menu"><a href="https://www.youtube.com/watch?v=cPJiPphm8tg">광고보고<br> 무료채팅 1/3</a></div>
+        <div class="menu">접속해 있는 친구 <br><br>
+            <a href="친구_김민주.html">김민주</a><br><br>
+            <a href="">신민규</a> <br><br>
+            <a href="">서민석 </a><br>
+        </div>
 
-
-        <div class='clear'></div>
+    </nav>
 
 <section>
-    <img src="logo.png" width="200px"> 
-  
+    <div id="f">
+        <div class="menu1"><img src="logo.png" width="250px"> </div>
+        <div class="menu2"><a href="친구신청하기.html"> &nbsp; &nbsp;친구 신청하기&nbsp; &nbsp;</a></div>
+        <div class="menu2"><a href="신고하기.html"> &nbsp; &nbsp;신고하기&nbsp; &nbsp;</a></div>
+    </div>
+    <div id="e">
+        <div class="menu4"> &nbsp; &nbsp;&nbsp; &nbsp;ESFJ와 채팅 중 입니다.&nbsp; &nbsp;&nbsp; &nbsp;</div> 
+    </div>
+   <div id="rr" >   <form>
+    <textarea placeholder="내용을 입력하세요."></textarea>
+    <input type="submit" value="보내기">
+  </form>
+</div>
 </section>
-
-
-
-
+</div>  
+ 
 
 </body>
 </html>

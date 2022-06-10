@@ -3,6 +3,7 @@
 <head>
 <meta charset='utf-8'>
 <style>
+	*{margin: 0;  padding: 0;}
 .back {background-image: url(backgroundimage.jpg); background-position: center center;
 		 background-repeat: no-repeat; padding-top: 20px; 
 		background-size: 1500px 700px; margin: 10px auto; 
@@ -12,9 +13,10 @@
 	header, nav, section, aside, footer { 
 		border: solid 0px rgb(28, 27, 27); 
 	}
-header { margin-top: 70px;
-	width: 995px; height: 150px;
-	margin: 0 auto; padding-top: 10px;
+header { margin-top: 70px; width: 400px; height: 150px; padding-top: 10px;
+	margin-top: 30px; margin-left: 600px;
+
+
 }
 
 section {
@@ -41,8 +43,8 @@ nav{
 .clear {clear: both;}
 
 #logo { 
-margin-top: 30px;  text-align: center; display: flex;
-justify-content: center;
+margin-top: 30px; justify-content: center; text-align: center;
+margin: 0 auto; 
 }
 
 
@@ -132,22 +134,31 @@ font-size: 40px; text-underline-position: under;}
 
 h4 {float: left;}
 A:hover {text-decoration: none; color: green;}
+a:link{ color: black; text-decoration: none;}
+a:visited{ color: black; text-decoration: none; }
+
+.menu:link{ background-color: none; background-color: white;  text-decoration: none;  width: 200px; padding: 36.5px 0; text-align: center; }
+.menu:visited{background-color: none; background-color: beige; color: black; text-decoration: none; }
+.menu:hover{ background-color: none; background-color: beige; color: black; text-decoration: none; }
+
+
+
 
 </style>
 </head>
 <body>
 	
 <header>
-<div id="logo">
- <img src="logo.png" width="400px"> 
+
+ <img src="logo.png"  width="400px"> 
 </header>
-<span class="c">로그아웃</span>
+<span class="c"><a href="메인페이지_로그인.html">로그아웃</a></span>
 
 <div class="back"> 
 	<div id="S2"> 
 		<nav>
-			<div class="menu">매칭 <span class="blue2">GO</span> </div>
-			<div class="menu">결제하러 가기</div>
+			<div class="menu"><a href="채팅페이지.html">매칭</a><span class="blue2">GO</span> </div>
+			<div class="menu"><a href="결제페이지.html">결제하러 가기</a></div>
 		</nav>
 
 <section>
